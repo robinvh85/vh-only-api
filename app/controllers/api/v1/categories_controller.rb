@@ -4,6 +4,9 @@ module Api
   module V1
     # CategoriesController
     class CategoriesController < ApplicationController
+      include Swagger::Blocks
+      include Swagger::CategoriesApi
+
       def index
         render json: Category.all
       end
