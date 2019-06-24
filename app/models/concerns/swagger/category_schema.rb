@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Swagger
-  class CategorySchema
+  module CategorySchema
     extend ActiveSupport::Concern
     include Swagger::Blocks
 

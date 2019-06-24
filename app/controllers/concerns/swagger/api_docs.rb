@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Swagger
-  class ApiDocs
+  module ApiDocs
     extend ActiveSupport::Concern
     include Swagger::Blocks
 
@@ -17,12 +17,12 @@ module Swagger
         key :consumes, ['application/json']
         key :produces, ['application/json']
 
-        extend Swagger::Parameters
+        extend Swagger::CommonParameters
       end
 
       SWAGGERED_CLASSES = [
         Category,
-        Api::V1::CategoriesController,
+        V1::CategoriesController,
         self
       ].freeze
     end
