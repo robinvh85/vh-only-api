@@ -9,6 +9,15 @@ module ExceptionHandler
       json_response({ message: e.message }, :internal_server_error)
     end
 
+    rescue_from Errors::AuthorizationError do |exception|
+      json_response(
+        {
+          message: exception.message,
+          errors: exception.error
+        }, :unauthorized
+      )
+    end
+
     rescue_from Errors::ParameterError do |exception|
       json_response(
         {

@@ -16,7 +16,7 @@ gem 'puma', '~> 3.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -49,7 +49,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Added gems
 gem 'active_model_serializers'
 gem 'dotenv-rails'
+gem 'jwt'
 gem 'rack-cors', require: 'rack/cors'
 gem 'rubocop'
+gem 'simple_command'
 gem 'swagger-blocks'
 gem 'swagger_ui_engine'

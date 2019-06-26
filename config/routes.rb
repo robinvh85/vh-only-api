@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     resources :categories, only: %w[index create]
   end
 
+  # Authentication - get token
+  post 'authenticate', to: 'authentication#authenticate'
+
   unless Rails.env.development?
     match "*path", to: "application#catch_404", via: :all
   end
