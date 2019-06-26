@@ -49,6 +49,7 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     ast (2.4.0)
+    bcrypt (3.1.13)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -70,6 +71,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
     jsonapi-renderer (0.2.2)
+    jwt (2.2.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -151,6 +153,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    simple_command (0.0.9)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -181,9 +184,11 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
   dotenv-rails
+  jwt
   listen (>= 3.0.5, < 3.2)
   mysql2
   pry-rails
@@ -191,6 +196,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 5.2.3)
   rubocop
+  simple_command
   spring
   spring-watcher-listen (~> 2.0.0)
   swagger-blocks
