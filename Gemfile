@@ -48,10 +48,12 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Added gems
 gem 'active_model_serializers'
+gem 'devise'
 gem 'dotenv-rails'
 gem 'jwt'
 gem 'rack-cors', require: 'rack/cors'
 gem 'rubocop'
 gem 'simple_command'
+gem 'simple_token_authentication'
 gem 'swagger-blocks'
 gem 'swagger_ui_engine'
